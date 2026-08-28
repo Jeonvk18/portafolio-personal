@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+ <meta charset="UTF-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Ada Montes — Portafolio</title>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+ <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+ <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- sendero dibujado a mano: hilo conductor visual (atletismo + naturaleza) -->
+<div class="trail-rail" aria-hidden="true">
+  <svg viewBox="0 0 60 1000" preserveAspectRatio="none">
+    <path id="trail-path" d="M30,0 C10,60 50,110 28,180 C6,250 46,300 24,370
+      C4,430 44,470 30,540 C18,600 42,650 26,720
+      C10,790 44,830 28,900 C16,940 38,970 30,1000" />
+  </svg>
+  <span class="waypoint" data-node="inicio" style="top:2%"></span>
+  <span class="waypoint" data-node="soy" style="top:20%"></span>
+  <span class="waypoint" data-node="logros" style="top:38%"></span>
+  <span class="waypoint" data-node="trabajos" style="top:56%"></span>
+  <span class="waypoint" data-node="experiencia" style="top:74%"></span>
+  <span class="waypoint" data-node="contacto" style="top:92%"></span>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#inicio" class="nav-logo">Camila Torres</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav-links" id="navLinks">
+    <a href="#soy" data-nav>Quién soy</a>
+    <a href="#logros" data-nav>Logros</a>
+    <a href="#trabajos" data-nav>Trabajos</a>
+    <a href="#experiencia" data-nav>Experiencia</a>
+    <a href="#contacto" data-nav class="nav-cta">Contacto</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <div class="hero-text">
+    <p class="hero-eyebrow">Deportista · Gestora de proyectos · Emprendedora</p>
+    <h1 class="hero-title">
+      Ada <span class="accent-text">Montes</span>
+    </h1>
+    <p class="hero-sub">La misma disciplina que me llevó a las competencias la uso hoy para devolverle algo al territorio que piso: deporte, comunidades activas, conservación del medio ambiente y creatividad.</p>
+    <div class="hero-actions">
+      <a href="#trabajos" class="btn btn-primary">Ver proyectos</a>
+      <a href="#contacto" class="btn btn-ghost">Hablemos</a>
+    </div>
+  </div>
+ 
+  <div class="hero-media reveal">
+    <!-- EDITA AQUÍ: reemplaza este div por <img src="tu-foto.jpg" alt="Camila Torres corriendo"> -->
+    <div class="img-placeholder torn" data-label="Tu foto aquí (acción / retrato)"></div>
+  </div>
+ 
+  <div class="scroll-cue" aria-hidden="true">desliza <span>↓</span></div>
+</section>
+ 
+<main>
+
+  <!-- ============ QUIÉN SOY ============ -->
+  <section class="section split" id="soy">
+    <div class="split-media reveal">
+      <!-- EDITA AQUÍ: reemplaza este div por <img src="tu-foto.jpg" alt="Camila Torres"> -->
+      <div class="img-placeholder torn" data-label="Tu foto aquí (retrato)"></div>
+    </div>
+    <div class="split-text reveal">
+      <p class="section-eyebrow">01 — Quién soy</p>
+      <h2>De correr contra el reloj a correr por el territorio.</h2>
+      <!-- EDITA AQUÍ: tu bio real -->
+      <p>Fui atleta de fondo durante más de diez años, parte de la selección nacional en pruebas de media y larga distancia. Ese tiempo me enseñó algo que llevo a todo lo que hago hoy: la constancia importa más que el talento, y los resultados grandes nacen de rutinas pequeñas repetidas con cuidado.</p>
+      <p>Cuando dejé la competencia de alto rendimiento, canalicé esa disciplina hacia el trabajo comunitario y ambiental: organizo jornadas de reciclaje, limpiezas de ríos y quebradas, y programas que usan el deporte como puerta de entrada a la conciencia ambiental.</p>
+      <ul class="tag-list">
+        <li>Gestión de proyectos</li>
+        <li>Economía circular</li>
+        <li>Educación ambiental</li>
+        <li>Deporte comunitario</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ LOGROS ============ -->
+  <section class="section" id="logros">
+    <p class="section-eyebrow center">02 — Logros</p>
+    <h2 class="center">Lo que dejaron la pista y el territorio</h2>
+
+    <div class="logros-grid">
+      <!-- EDITA AQUÍ: cada tarjeta = un logro real -->
+      <article class="logro-card reveal">
+        <div class="img-placeholder small torn" data-label="Imagen / foto"></div>
+        <p class="logro-num">2°</p>
+        <h3>Lugar — Media Maratón Nacional</h3>
+        <p>Subcampeona nacional en 21K, representando a la selección durante tres temporadas consecutivas.</p>
+      </article>
+
+      <article class="logro-card reveal">
+        <div class="img-placeholder small torn" data-label="Imagen / foto"></div>
+        <p class="logro-num">8.4 t</p>
+        <h3>Material reciclado</h3>
+        <p>Toneladas de plástico y papel recolectadas y derivadas a gestores autorizados en tres años de campañas.</p>
+      </article>
+
+      <article class="logro-card reveal">
+        <div class="img-placeholder small torn" data-label="Imagen / foto"></div>
+        <p class="logro-num">14</p>
+        <h3>Limpiezas de río organizadas</h3>
+        <p>Jornadas comunitarias en quebradas urbanas, con más de 600 voluntarios movilizados en total.</p>
+      </article>
+
+      <article class="logro-card reveal">
+        <div class="img-placeholder small torn" data-label="Imagen / foto"></div>
+        <p class="logro-num">+900</p>
+        <h3>Estudiantes en talleres</h3>
+        <p>Participantes en programas escolares que combinan actividad física y educación ambiental.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ TRABAJOS ============ -->
+  <section class="section" id="trabajos">
+    <p class="section-eyebrow center">03 — Trabajos</p>
+    <h2 class="center">Proyectos seleccionados</h2>
+
+    <div class="trabajos-grid">
+      <!-- EDITA AQUÍ: reemplaza imagen, título, texto y enlace de cada proyecto -->
+      <article class="trabajo-card reveal">
+        <div class="img-placeholder wide torn" data-label="Foto del proyecto"></div>
+        <div class="trabajo-body">
+          <h3>Río Vivo</h3>
+          <p>Programa comunitario de limpieza y monitoreo de tres quebradas urbanas, con jornadas mensuales y talleres de clasificación de residuos.</p>
+          <div class="tag-list small">
+            <span>Comunidad</span><span>Reciclaje</span><span>Educación</span>
+          </div>
+          <a href="#" class="link-arrow">Ver proyecto →</a>
+        </div>
+      </article>
+
+      <article class="trabajo-card reveal">
+        <div class="img-placeholder wide torn" data-label="Foto del proyecto"></div>
+        <div class="trabajo-body">
+          <h3>Corre y Recicla</h3>
+          <p>Carreras populares donde cada inscripción se paga con material reciclable, canjeado luego por gestores autorizados de la ciudad.</p>
+          <div class="tag-list small">
+            <span>Deporte</span><span>Economía circular</span>
+          </div>
+          <a href="#" class="link-arrow">Ver proyecto →</a>
+        </div>
+      </article>
+
+      <article class="trabajo-card reveal">
+        <div class="img-placeholder wide torn" data-label="Foto del proyecto"></div>
+        <div class="trabajo-body">
+          <h3>Semillero Verde</h3>
+          <p>Programa escolar que combina entrenamiento atlético con huertos comunitarios y compostaje, en cuatro escuelas públicas.</p>
+          <div class="tag-list small">
+            <span>Escuelas</span><span>Huertos</span><span>Deporte</span>
+          </div>
+          <a href="#" class="link-arrow">Ver proyecto →</a>
+        </div>
+      </article>
+
+      <article class="trabajo-card reveal">
+        <div class="img-placeholder wide torn" data-label="Foto del proyecto"></div>
+        <div class="trabajo-body">
+          <h3>Punto Limpio Barrial</h3>
+          <p>Diseño e implementación de tres puntos fijos de acopio de reciclables en barrios sin acceso a recolección diferenciada.</p>
+          <div class="tag-list small">
+            <span>Infraestructura</span><span>Gestión</span>
+          </div>
+          <a href="#" class="link-arrow">Ver proyecto →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCIA ============ -->
+  <section class="section split reverse" id="experiencia">
+    <div class="split-media reveal">
+      <!-- EDITA AQUÍ: puedes usar una foto de equipo, entrenamiento, jornada, etc. -->
+      <div class="img-placeholder torn" data-label="Foto de equipo o jornada"></div>
+    </div>
+    <div class="split-text reveal">
+      <p class="section-eyebrow">04 — Experiencia</p>
+      <h2>Trayectoria</h2>
+
+      <div class="timeline">
+        <!-- EDITA AQUÍ: agrega o edita cada etapa -->
+        <div class="timeline-item">
+          <p class="timeline-date">2022 — Presente</p>
+          <h3>Fundadora y coordinadora — Río Vivo</h3>
+          <p>Dirijo el programa de limpieza y educación ambiental, coordino voluntariado y alianzas con el municipio.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">2018 — 2022</p>
+          <h3>Atleta de la Selección Nacional</h3>
+          <p>Competí en pruebas de media y larga distancia, representando al país en torneos regionales y nacionales.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">2016 — 2018</p>
+          <h3>Voluntaria — Fundación Bosque Nativo</h3>
+          <p>Apoyo en jornadas de reforestación y primeros programas de educación ambiental en escuelas rurales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section" id="contacto">
+    <div class="contact-wrap">
+      <div class="contact-text reveal">
+        <p class="section-eyebrow">05 — Contacto</p>
+        <h2>Sumemos manos</h2>
+        <p>¿Tienes una idea de proyecto ambiental, una alianza o simplemente quieres saludar? Con gusto conversamos.</p>
+
+        <!-- EDITA AQUÍ: tus datos reales -->
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:hola@camilatorres.eco">hola@camilatorres.eco</a></li>
+          <li><span>Instagram</span><a href="#" target="_blank" rel="noopener">@camila.corre.recicla</a></li>
+          <li><span>LinkedIn</span><a href="#" target="_blank" rel="noopener">/in/camilatorres</a></li>
+          <li><span>Ubicación</span><span>Quito, Ecuador</span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="field">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required placeholder="Tu nombre">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="tu@email.com">
+        </div>
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Cuéntame sobre tu proyecto..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full">Enviar mensaje</button>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+
+  <p>© 2026 Camila Torres — construido con HTML, CSS &amp; JS</p>
+
+  <a href="#inicio" class="back-top">volver arriba ↑</a>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
