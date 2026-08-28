@@ -3,16 +3,16 @@
    ============================================================ */
 :root {
   --ink: #efefef;
-  --ink-soft: #405d90;
-  --paper: #081b2f;
-  --paper-dim: #074999;
+  --ink-soft: #143061;
+  --paper: #0a1e32;
+  --paper-dim: #2d588d;
   --line: rgba(20, 30, 45, 0.14);
-  --line-on-dark: rgba(30, 63, 97, 0.379);
-  --blue-deep: #1c3f6e;
-  --blue: #5f87c0;
-  --blue-bright: #5c88c4;
-  --muted: #1c345b;
-  --muted-dark: #567fc1;
+  --line-on-dark: rgba(90, 164, 238, 0.562);
+  --blue-deep: #6b93c8;
+  --blue: #4a7fd3;
+  --blue-bright: #1957ad;
+  --muted: #4a7dce;
+  --muted-dark: #2c5598;
 
   --f-display: 'Fraunces', serif;
   --f-body: 'Work Sans', sans-serif;
@@ -159,7 +159,7 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 1.2rem var(--gutter);
-  background: rgba(62, 96, 199, 0.82);
+  background: rgba(46, 60, 100, 0.82);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
 }
@@ -680,6 +680,88 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
+}
+
+.formulario-cuadro {
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+
+  /* Sombra para darle profundidad */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+
+  border: 1px solid rgba(46, 94, 59, 0.15);
+}
+
+.formulario-cuadro h2 {
+  text-align: center;
+  color: #33539d;
+  margin-bottom: 30px;
+}
+
+/* Campos */
+.campo {
+  margin-bottom: 20px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #415aad;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 13px 15px;
+
+  border: 1px solid #97abd8;
+  border-radius: 10px;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  outline: none;
+  transition: 0.3s;
+}
+
+.campo textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* Efecto al seleccionar un campo */
+.campo input:focus,
+.campo textarea:focus {
+  border-color: #585bba;
+  box-shadow: 0 0 0 3px rgba(46, 94, 59, 0.12);
+}
+
+/* Botón */
+.formulario-cuadro button {
+  width: 100%;
+  padding: 14px;
+
+  background: #103163;
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.formulario-cuadro button:hover {
+  background: #244b2f;
+  transform: translateY(-2px);
 }
 
 .field label {

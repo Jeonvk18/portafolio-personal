@@ -38,7 +38,7 @@
 
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
-  <a href="#inicio" class="nav-logo">Camila Torres</a>
+  <a href="#inicio" class="nav-logo">Ada Montes</a>
   <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
     <span></span><span></span><span></span>
   </button>
@@ -58,7 +58,9 @@
     <h1 class="hero-title">
       Ada <span class="accent-text">Montes</span>
     </h1>
-    <p class="hero-sub">La misma disciplina que me llevó a las competencias la uso hoy para devolverle algo al territorio que piso: deporte, comunidades activas, conservación del medio ambiente y creatividad.</p>
+    <p class="hero-sub">
+      Transformo la disciplina del deporte en proyectos que conectan a las personas con su entorno y fomentan la sostenibilidad.
+    </p>
     <div class="hero-actions">
       <a href="#trabajos" class="btn btn-primary">Ver proyectos</a>
       <a href="#contacto" class="btn btn-ghost">Hablemos</a>
@@ -67,7 +69,7 @@
  
   <div class="hero-media reveal">
     <!-- EDITA AQUÍ: reemplaza este div por <img src="tu-foto.jpg" alt="Camila Torres corriendo"> -->
-    <div class="img-placeholder torn" data-label="Tu foto aquí (acción / retrato)"></div>
+    <div class="img-placeholder" data-label="img1.jpg"></div>
   </div>
  
   <div class="scroll-cue" aria-hidden="true">desliza <span>↓</span></div>
@@ -83,11 +85,11 @@
     </div>
     <div class="split-text reveal">
       <p class="section-eyebrow">01 — Quién soy</p>
-      <h2>De correr contra el reloj a correr por el territorio.</h2>
+      <h2>Creatividad y disciplina son dos pilares que guían mi trabajo.</h2>
       <!-- EDITA AQUÍ: tu bio real -->
-      <p>Fui atleta de fondo durante más de diez años, parte de la selección nacional en pruebas de media y larga distancia. Ese tiempo me enseñó algo que llevo a todo lo que hago hoy: la constancia importa más que el talento, y los resultados grandes nacen de rutinas pequeñas repetidas con cuidado.</p>
-      <p>Cuando dejé la competencia de alto rendimiento, canalicé esa disciplina hacia el trabajo comunitario y ambiental: organizo jornadas de reciclaje, limpiezas de ríos y quebradas, y programas que usan el deporte como puerta de entrada a la conciencia ambiental.</p>
-      <ul class="tag-list">
+      <p>Sólida formación en investigación sociológica y producción de contenidos visuales. Enfocado en la intersección entre el análisis del comportamiento social y la estética comunicativa.</p>
+      <p> Con experiencia en liderazgo y la ejecución de proyectos que requieren rigor investigativo, pensamiento crítico y un alto nivel de detalle técnico.</p>
+       <ul class="tag-list">
         <li>Gestión de proyectos</li>
         <li>Economía circular</li>
         <li>Educación ambiental</li>
@@ -238,24 +240,30 @@
         </ul>
       </div>
 
-      <form class="contact-form reveal" id="contactForm">
-        <div class="field">
-          <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" required placeholder="Tu nombre">
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required placeholder="tu@email.com">
-        </div>
-        <div class="field">
-          <label for="message">Mensaje</label>
-          <textarea id="message" name="message" rows="4" required placeholder="Cuéntame sobre tu proyecto..."></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary full">Enviar mensaje</button>
-        <p class="form-status" id="formStatus" aria-live="polite"></p>
-      </form>
+      <section id="contacto" class="seccion-formulario">
+    <div class="formulario-cuadro">
+        <h2>Contáctanos</h2>
+
+        <form id="contactForm">
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" placeholder="Tu correo" required>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+            </div>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
     </div>
-  </section>
+</section>
 
 </main>
 
