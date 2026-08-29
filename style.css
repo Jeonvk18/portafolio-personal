@@ -87,6 +87,8 @@ a {
 img {
   max-width: 100%;
   display: block;
+  border-radius: 20px;
+  border: 5px solid #5587deb6;
 }
 
 ::selection {
@@ -676,18 +678,29 @@ main {
   opacity: .65;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.1rem;
+/* CUADRO DEL TEXTO DE CONTACTO */
+.contact-card {
+  padding: 40px;
+
+  background: rgba(255, 255, 255, 0.913);
+
+  border: 1px solid rgb(255, 255, 255);
+
+  border-radius: 24px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
+
 
 .formulario-cuadro {
   width: 100%;
   max-width: 600px;
   padding: 40px;
 
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(237, 238, 243, 0.95);
   border-radius: 20px;
 
   /* Sombra para darle profundidad */
