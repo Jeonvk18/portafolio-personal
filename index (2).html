@@ -1,277 +1,461 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <meta charset="UTF-8">
+    <meta name="description" content="Portafolio personal de Ada Montes">
+    <meta name="author" content="Ada Montes">
 
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Ada Montes</title>
 
- <title>Ada Montes — Portafolio</title>
-
- <link rel="preconnect" href="https://fonts.googleapis.com">
-
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
- <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-
- <link rel="stylesheet" href="style.css">
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- sendero dibujado a mano: hilo conductor visual (atletismo + naturaleza) -->
-<div class="trail-rail" aria-hidden="true">
-  <svg viewBox="0 0 60 1000" preserveAspectRatio="none">
-    <path id="trail-path" d="M30,0 C10,60 50,110 28,180 C6,250 46,300 24,370
-      C4,430 44,470 30,540 C18,600 42,650 26,720
-      C10,790 44,830 28,900 C16,940 38,970 30,1000" />
-  </svg>
-  <span class="waypoint" data-node="inicio" style="top:2%"></span>
-  <span class="waypoint" data-node="soy" style="top:20%"></span>
-  <span class="waypoint" data-node="logros" style="top:38%"></span>
-  <span class="waypoint" data-node="trabajos" style="top:56%"></span>
-  <span class="waypoint" data-node="experiencia" style="top:74%"></span>
-  <span class="waypoint" data-node="contacto" style="top:92%"></span>
-</div>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
 
-<!-- ============ NAV ============ -->
-<header class="nav" id="nav">
-  <a href="#inicio" class="nav-logo">Ada Montes</a>
-  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
-    <span></span><span></span><span></span>
-  </button>
-  <nav class="nav-links" id="navLinks">
-    <a href="#soy" data-nav>Quién soy</a>
-    <a href="#logros" data-nav>Logros</a>
-    <a href="#trabajos" data-nav>Trabajos</a>
-    <a href="#experiencia" data-nav>Experiencia</a>
-    <a href="#contacto" data-nav class="nav-cta">Contacto</a>
-  </nav>
-</header>
+        <nav class="navbar">
 
-<!-- ============ HERO ============ -->
-<section class="hero" id="inicio">
-  <div class="hero-text">
-    <p class="hero-eyebrow">Deportista · Gestora de proyectos · Emprendedora</p>
-    <h1 class="hero-title">
-      Ada <span class="accent-text">Montes</span>
-    </h1>
-    <p class="hero-sub">
-      Transformo la disciplina del deporte en proyectos que conectan a las personas con su entorno y fomentan la sostenibilidad.
-    </p>
-    <div class="hero-actions">
-      <a href="#trabajos" class="btn btn-primary">Ver proyectos</a>
-      <a href="#contacto" class="btn btn-ghost">Hablemos</a>
-    </div>
-  </div>
- 
-  <div class="hero-media reveal">
-    <img src="img1.jpg" alt="Camila Torres corriendo">
-  </div>
- 
-  <div class="scroll-cue" aria-hidden="true">desliza <span>↓</span></div>
-</section>
- 
-<main>
+            <a href="#inicio" class="logo">
+                ADA MONTES
+            </a>
 
-  <!-- ============ QUIÉN SOY ============ -->
-  <section class="section split" id="soy">
-    <div class="split-media reveal">
-      <!-- EDITA AQUÍ: reemplaza este div por <img src="tu-foto.jpg" alt="Camila Torres"> -->
-      <div><img src="img6.jpeg" alt="Camila Torres"> </div>
-    </div>
-    <div class="split-text reveal">
-      <p class="section-eyebrow">01 — Quién soy</p>
-      <h2>Creatividad y disciplina son dos pilares que guían mi trabajo.</h2>
-      <!-- EDITA AQUÍ: tu bio real -->
-      <p>Sólida formación en investigación sociológica y producción de contenidos visuales. Enfocado en la intersección entre el análisis del comportamiento social y la estética comunicativa.</p>
-      <p> Con experiencia en liderazgo y la ejecución de proyectos que requieren rigor investigativo, pensamiento crítico y un alto nivel de detalle técnico.</p>
-       <ul class="tag-list">
-        <li>Gestión de proyectos</li>
-        <li>Liderazgo</li>
-        <li>Técnicas de investigación</li>
-        <li>Educación ambiental</li>
-        <li>Producción y dirección general</li>
-      </ul>
-    </div>
-  </section>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quien-soy">Quién soy</a></li>
+                <li><a href="#logros">Logros</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
 
-  <!-- ============ LOGROS ============ -->
-  <section class="section" id="logros">
-    <p class="section-eyebrow center">02 — Logros</p>
-    <h2 class="center">Cada logro es el resultado de una combinación de esfuerzo, creatividad y compromiso.</h2>
+        </nav>
 
-    <div class="logros-grid">
-      <!-- EDITA AQUÍ: cada tarjeta = un logro real -->
-      <article class="logro-card reveal">
-        <div><img src="img4.jpg" alt="Ada Montes"> </div>
-        <p class="logro-num">1°</p>
-        <h3>Premios CineMujer - Dirección de la Mujer</h3>
-        <p>En calidad de directora general, lideré la realización del cortometraje, que obtuvo uno de los reconocimientos más importantes de su categoría.</p>
-      </article>
+    </header>
 
-      <article class="logro-card reveal">
-        <div><img src="img5.jpeg" alt="Ada Montes"> </div>
-        <p class="logro-num">N° 10</p>
-        <h3>Top 15 de los mejores cuentos</h3>
-        <p>El cuento obtuvo un lugar entre los 15 mejores relatos publicados en la categoría de Bosques Secos y Manglares, destacándose por su calidad y temática.</p>
-      </article>
 
-      <article class="logro-card reveal">
-        <div><img src="img3.jpg" alt="Ada Montes"> </div>
-        <p class="logro-num">87 %</p>
-        <h3>Proyectos de concientización ambiental</h3>
-        <p>Lideré la planificación estratégica de proyectos de conservación ambiental, logrando una tasa de participación del 87% del alumnado.</p>
-      </article>
+    <main>
 
-    </div>
-  </section>
+        <!-- ================= INICIO ================= -->
+        <section id="inicio" class="hero">
 
-  <!-- ============ TRABAJOS ============ -->
-  <section class="section" id="trabajos">
-    <p class="section-eyebrow center">03 — Trabajos</p>
-    <h2 class="center">Proyectos seleccionados</h2>
+            <div class="hero-content">
 
-    <div class="trabajos-grid">
-      <!-- EDITA AQUÍ: reemplaza imagen, título, texto y enlace de cada proyecto -->
-      <article class="trabajo-card reveal">
-        <img src="img7.jpg" alt="Foto del proyecto">
-        <div class="trabajo-body">
-          <h3>Plan Ambiental CRR</h3>
-          <p>El Plan Ambiente CRR (Cuidar, Reciclar y Reutilizar) es un proyecto innovador ideado, dirigido y liderado por Ada Montes, enfocado en promover prácticas sostenibles y generar un impacto positivo en el cuidado y preservación del medio ambiente.</p>
-          <div class="tag-list small">
-            <span>Comunidad</span><span>Reciclaje</span><span>Educación</span>
-          </div>
-          <a href="#" class="link-arrow">Ver proyecto →</a>
-        </div>
-      </article>
+                <p class="eyebrow">
+                    PORTAFOLIO PERSONAL
+                </p>
 
-      <article class="trabajo-card reveal">
-         <img src="img2.jpg" alt="Foto del proyecto">
-        <div class="trabajo-body">
-          <h3>Directora de Cortometrajes</h3>
-          <p>Dirección general en dos ediciones del Festival Intercolegial Audiovisual CineMujer, liderando la gestión creativa y técnica. Coordinación de los departamentos de arte y fotografía, obteniendo un galardón en categorías competitivas.</p>
-          <div class="tag-list small">
-            <span>Dirección general</span><span>Fotografía</span>
-          </div>
-          <a href="#" class="link-arrow">Ver proyecto →</a>
-        </div>
-      </article>
+                <h1>
+                    Hola, soy <span>Ada Montes</span>
+                </h1>
 
-      <article class="trabajo-card reveal">
-        <div class="img-placeholder wide torn" data-label="Foto del proyecto"></div>
-        <div class="trabajo-body">
-          <h3>Semillero Verde</h3>
-          <p>Programa escolar que combina entrenamiento atlético con huertos comunitarios y compostaje, en cuatro escuelas públicas.</p>
-          <div class="tag-list small">
-            <span>Escuelas</span><span>Huertos</span><span>Deporte</span>
-          </div>
-          <a href="#" class="link-arrow">Ver proyecto →</a>
-        </div>
-      </article>
+                <p class="hero-description">
+                    Creativa, emprendedora y apasionada por transformar
+                    ideas en proyectos que generan impacto.
+                </p>
 
-      <article class="trabajo-card reveal">
-        <div class="img-placeholder wide torn" data-label="Foto del proyecto"></div>
-        <div class="trabajo-body">
-          <h3>Punto Limpio Barrial</h3>
-          <p>Diseño e implementación de tres puntos fijos de acopio de reciclables en barrios sin acceso a recolección diferenciada.</p>
-          <div class="tag-list small">
-            <span>Infraestructura</span><span>Gestión</span>
-          </div>
-          <a href="#" class="link-arrow">Ver proyecto →</a>
-        </div>
-      </article>
-    </div>
-  </section>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn">
+                        Ver mis proyectos
+                    </a>
 
-  <!-- ============ EXPERIENCIA ============ -->
-  <section class="section split reverse" id="experiencia">
-    <div class="split-media reveal">
-      <!-- EDITA AQUÍ: puedes usar una foto de equipo, entrenamiento, jornada, etc. -->
-      <div class="img-placeholder torn" data-label="Foto de equipo o jornada"></div>
-    </div>
-    <div class="split-text reveal">
-      <p class="section-eyebrow">04 — Experiencia</p>
-      <h2>Trayectoria</h2>
+                    <a href="#contacto" class="btn btn-outline">
+                        Contactarme
+                    </a>
+                </div>
 
-      <div class="timeline">
-        <!-- EDITA AQUÍ: agrega o edita cada etapa -->
-        <div class="timeline-item">
-          <p class="timeline-date">2022 — Presente</p>
-          <h3>Fundadora y coordinadora — Río Vivo</h3>
-          <p>Dirijo el programa de limpieza y educación ambiental, coordino voluntariado y alianzas con el municipio.</p>
-        </div>
-        <div class="timeline-item">
-          <p class="timeline-date">2018 — 2022</p>
-          <h3>Atleta de la Selección Nacional</h3>
-          <p>Competí en pruebas de media y larga distancia, representando al país en torneos regionales y nacionales.</p>
-        </div>
-        <div class="timeline-item">
-          <p class="timeline-date">2016 — 2018</p>
-          <h3>Voluntaria — Fundación Bosque Nativo</h3>
-          <p>Apoyo en jornadas de reforestación y primeros programas de educación ambiental en escuelas rurales.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-    <!-- ============ CONTACTO ============ -->
-  <section class="section" id="contacto">
-    <div class="contact-wrap">
-      <!-- CUADRO IZQUIERDO --> 
-       <div class="contact-text contact-card reveal"> 
-        <p class="section-eyebrow">05 — Contacto</p>
-        <h2>Sumemos manos</h2>
-        <p>¿Tienes una idea de proyecto ambiental, una alianza o simplemente quieres saludar? Con gusto conversamos.</p>
- 
-        <!-- EDITA AQUÍ: tus datos reales -->
-        <ul class="contact-list">
-          <li><span>Email</span><a href="mailto:hola@camilatorres.eco">hola@camilatorres.eco</a></li>
-          <li><span>Instagram</span><a href="#" target="_blank" rel="noopener">@camila.corre.recicla</a></li>
-          <li><span>LinkedIn</span><a href="#" target="_blank" rel="noopener">/in/camilatorres</a></li>
-          <li><span>Ubicación</span><span>Quito, Ecuador</span></li>
-        </ul>
-      </div>
-
-      <section id="contacto" class="seccion-formulario">
-    <div class="formulario-cuadro">
-        <h2>Contáctanos</h2>
-
-        <form id="contactForm">
-            <div class="campo">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" placeholder="Tu nombre" required>
             </div>
 
-            <div class="campo">
-                <label for="correo">Correo</label>
-                <input type="email" id="correo" placeholder="Tu correo" required>
+            <div class="hero-image">
+
+                <img 
+                    src="img1.jpg" 
+                    alt="Fotografía de Ada Montes"
+                >
+
             </div>
 
-            <div class="campo">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+        </section>
+
+
+        <!-- ================= QUIÉN SOY ================= -->
+        <section id="quien-soy" class="section about">
+
+            <div class="section-title">
+                <p class="eyebrow">01 — SOBRE MÍ</p>
+
+                <h2>
+                    ¿Quién soy?
+                </h2>
             </div>
 
-            <button type="submit">Enviar mensaje</button>
-        </form>
-    </div>
-</section>
+            <div class="about-content">
 
-</main>
+                <div class="about-image">
 
-<footer class="footer">
+                    <img
+                        src="img3.jpg"
+                        alt="Ada Montes trabajando en un proyecto"
+                    >
 
-  <p>© 2026 Camila Torres — construido con HTML, CSS &amp; JS</p>
+                </div>
 
-  <a href="#inicio" class="back-top">volver arriba ↑</a>
+                <div class="about-text">
 
-</footer>
+                    <p>
+                        Soy una persona creativa, curiosa y apasionada
+                        por aprender cosas nuevas. Me interesa desarrollar
+                        proyectos relacionados con la comunicación,
+                        el diseño, la creatividad y la innovación.
+                    </p>
 
-<script src="script.js"></script>
+                    <p>
+                        A través de mis experiencias he aprendido a
+                        convertir ideas en proyectos concretos, trabajar
+                        en equipo y asumir nuevos retos.
+                    </p>
+
+                    <div class="skills">
+
+                        <span>Creatividad</span>
+                        <span>Diseño</span>
+                        <span>Comunicación</span>
+                        <span>Liderazgo</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LOGROS ================= -->
+        <section id="logros" class="section achievements">
+
+            <div class="section-title">
+
+                <p class="eyebrow">02 — MIS LOGROS</p>
+
+                <h2>
+                    Lo que he conseguido
+                </h2>
+
+                <p>
+                    Algunas experiencias que representan mi crecimiento
+                    personal y profesional.
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+                <!-- LOGRO 1 -->
+                <article class="card">
+
+                    <span class="card-number">
+                        01
+                    </span>
+
+                    <div class="card-icon">
+                        🏆
+                    </div>
+
+                    <h3>
+                        Primer logro
+                    </h3>
+
+                    <p>
+                        Describe aquí uno de tus logros más importantes,
+                        explicando brevemente qué conseguiste y por qué
+                        fue significativo para ti.
+                    </p>
+
+                </article>
+
+
+                <!-- LOGRO 2 -->
+                <article class="card">
+
+                    <span class="card-number">
+                        02
+                    </span>
+
+                    <div class="card-icon">
+                        ⭐
+                    </div>
+
+                    <h3>
+                        Segundo logro
+                    </h3>
+
+                    <p>
+                        Escribe una breve descripción de otro logro,
+                        reconocimiento, premio o experiencia destacada.
+                    </p>
+
+                </article>
+
+
+                <!-- LOGRO 3 -->
+                <article class="card">
+
+                    <span class="card-number">
+                        03
+                    </span>
+
+                    <div class="card-icon">
+                        🚀
+                    </div>
+
+                    <h3>
+                        Tercer logro
+                    </h3>
+
+                    <p>
+                        Cuenta brevemente otro logro que demuestre
+                        tus habilidades, esfuerzo o crecimiento.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROYECTOS ================= -->
+        <section id="proyectos" class="section projects">
+
+            <div class="section-title">
+
+                <p class="eyebrow">03 — PROYECTOS</p>
+
+                <h2>
+                    Ideas que se convierten en realidad
+                </h2>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+                <!-- PROYECTO 1 -->
+                <article class="project">
+
+                    <div class="project-image">
+
+                        <img
+                            src="img/proyecto-1.jpg"
+                            alt="Imagen del primer proyecto"
+                        >
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-category">
+                            PROYECTO 01
+                        </p>
+
+                        <h3>
+                            Nombre del proyecto
+                        </h3>
+
+                        <p>
+                            Describe aquí tu proyecto, cuál era su
+                            objetivo, qué problema buscaba solucionar
+                            y cuál fue tu participación.
+                        </p>
+
+                        <a href="#" class="project-link">
+                            Ver proyecto →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROYECTO 2 -->
+                <article class="project">
+
+                    <div class="project-image">
+
+                        <img
+                            src="img/proyecto-2.jpg"
+                            alt="Imagen del segundo proyecto"
+                        >
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-category">
+                            PROYECTO 02
+                        </p>
+
+                        <h3>
+                            Nombre del proyecto
+                        </h3>
+
+                        <p>
+                            Explica brevemente de qué trata el proyecto,
+                            qué hiciste y qué resultado obtuviste.
+                        </p>
+
+                        <a href="#" class="project-link">
+                            Ver proyecto →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACTO ================= -->
+        <section id="contacto" class="section contact">
+
+            <div class="contact-content">
+
+                <div class="contact-text">
+
+                    <p class="eyebrow">
+                        04 — CONTACTO
+                    </p>
+
+                    <h2>
+                        Hablemos de ideas.
+                    </h2>
+
+                    <p>
+                        ¿Tienes un proyecto, una propuesta o simplemente
+                        quieres conocer más sobre mi trabajo?
+                        Puedes escribirme.
+                    </p>
+
+                    <div class="contact-info">
+
+                        <p>
+                            <strong>Email</strong><br>
+                            tuemail@gmail.com
+                        </p>
+
+                        <p>
+                            <strong>Instagram</strong><br>
+                            @tuusuario
+                        </p>
+
+                        <p>
+                            <strong>Ubicación</strong><br>
+                            Ecuador
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORMULARIO -->
+                <div class="contact-form">
+
+                    <form action="#" method="POST">
+
+                        <div class="form-group">
+
+                            <label for="nombre">
+                                Nombre
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                placeholder="Tu nombre"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Correo electrónico
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="tucorreo@email.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="mensaje">
+                                Mensaje
+                            </label>
+
+                            <textarea
+                                id="mensaje"
+                                name="mensaje"
+                                rows="6"
+                                placeholder="Escribe tu mensaje..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button type="submit" class="btn">
+                            Enviar mensaje
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <p>
+                © 2026 Ada Montes. Todos los derechos reservados.
+            </p>
+
+            <a href="#inicio">
+                Volver arriba ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="script.js"></script>
 
 </body>
-
 </html>
