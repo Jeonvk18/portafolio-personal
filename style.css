@@ -1,4 +1,3 @@
-```css
 /* =====================================================
    PORTAFOLIO PERSONAL — ADA MONTES
    PALETA: AZUL OSCURO · NEGRO · BLANCO
@@ -12,11 +11,11 @@
   --negro: #050914;
   --negro-suave: #0A1224;
 
-  --azul: #0B1F4B;
-  --azul-claro: #1E4FA3;
+  --azul: #051944;
+  --azul-claro: #315da7;
 
   --blanco: #F8FAFF;
-  --gris: #AAB4C7;
+  --gris: #8e98aa;
 
   --borde: rgba(255, 255, 255, 0.14);
 
@@ -40,7 +39,7 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background: var(--negro);
   color: var(--blanco);
   line-height: 1.6;
@@ -789,5 +788,3 @@ a {
     text-align: center;
   }
 }
-
-```
