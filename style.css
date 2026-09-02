@@ -342,6 +342,7 @@ a {
   filter: grayscale(100%);
 
   border: 1px solid var(--borde);
+
 }
 
 .about-text {
