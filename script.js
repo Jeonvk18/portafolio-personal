@@ -1,3 +1,8 @@
+/* =====================================================
+   PORTAFOLIO PERSONAL — ADA MONTES
+   JAVASCRIPT
+   ===================================================== */
+
 document.addEventListener('DOMContentLoaded', () => {
 
   /* -----------------------------------------------------
@@ -27,28 +32,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* -----------------------------------------------------
-     2. ANIMACIÓN AL APARECER (fade-in) PARA
-        LAS CARDS DE LOGROS Y LOS PROYECTOS
+     2. EFECTOS DE APARICIÓN AL HACER SCROLL (REVEAL)
+        Cualquier elemento con el atributo data-reveal
+        se revela automáticamente cuando entra en pantalla.
+        El tipo de efecto (up / left / right / scale) y el
+        retraso (data-reveal-delay) se definen en el HTML,
+        y el estilo visual vive en style.css.
   ----------------------------------------------------- */
-  const elementosAnimados = document.querySelectorAll('.card, .project');
+  const elementosRevelados = document.querySelectorAll('[data-reveal]');
 
-  elementosAnimados.forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(25px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-  });
-
-  const observerAnimacion = new IntersectionObserver((entries, obs) => {
+  const observerReveal = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
+        entry.target.classList.add('is-visible');
         obs.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.2 });
+  }, { threshold: 0.15 });
 
-  elementosAnimados.forEach(el => observerAnimacion.observe(el));
+  elementosRevelados.forEach(el => observerReveal.observe(el));
 
 
   /* -----------------------------------------------------
@@ -59,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const formulario = document.querySelector('.contact-form form');
 
   if (formulario) {
-    // Creamos un mensaje de estado debajo del formulario
     const mensajeEstado = document.createElement('p');
     mensajeEstado.style.marginTop = '15px';
     mensajeEstado.style.fontSize = '14px';
