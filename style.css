@@ -130,7 +130,13 @@ a {
 
 .nav-menu a:hover::after {
   width: 100%;
+
 }
+
+.nav-menu a.active::after {
+  width: 100%;
+}
+
 
 
 /* =====================================================
