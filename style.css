@@ -241,6 +241,11 @@ a {
   z-index: -1;
 }
 
+.hero-content {
+  min-width: 0;
+  /* evita que el grid ensanche esta celda al ancho natural del contenido */
+}
+
 .hero h1 {
   font-size: clamp(55px, 8vw, 105px);
 
@@ -319,6 +324,8 @@ a {
 
 .hero-image {
   position: relative;
+  min-width: 0;
+  /* evita que el grid ensanche la celda al tamaño natural de la foto */
 }
 
 .hero-image img {
@@ -375,6 +382,8 @@ a {
   position: relative;
 
   transition: 0.4s;
+
+  min-width: 0;
 }
 
 .about-content:hover {
@@ -390,6 +399,8 @@ a {
 
 .about-image {
   position: relative;
+  min-width: 0;
+  /* evita que el grid ensanche la celda al tamaño natural de la foto */
 }
 
 .about-image img {
@@ -415,6 +426,8 @@ a {
   color: var(--gris);
 
   font-size: 17px;
+
+  min-width: 0;
 }
 
 .about-text p {
@@ -666,6 +679,12 @@ a {
   gap: 80px;
 
   align-items: start;
+
+  min-width: 0;
+}
+
+.contact-text {
+  min-width: 0;
 }
 
 .contact-text h2 {
@@ -705,6 +724,8 @@ a {
   padding: 35px;
 
   border: 1px solid var(--borde);
+
+  min-width: 0;
 }
 
 .form-group {
